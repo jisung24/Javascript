@@ -6,4 +6,4 @@
 
 // null undefined차이점
 // 1) undefined는 할당연산자 안 써줌, null은 할당해줌. 
-// 2) typeof undefined는 undefined, typeof null은 object;
+// 2) typeof undefined는 undefined, typeof null은 object(버그임);

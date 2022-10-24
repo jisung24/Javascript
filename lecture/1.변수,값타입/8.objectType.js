@@ -15,8 +15,15 @@
 // 그럼 jisung는 1번 주소값이 저장돼있어. 
 // ! 객체 속성 접근법 .로 접근한다.!!!!!!!!
 
-let jisung = { //jisung에는 data가 시작되는 주소값이 저장됨.
-    name : '지성',
-    age : 25, //value는 primitive도 ok, object type도 ok
-    hobbies : [1,2,3,4,5],
+let user1 = {
+    name : 'user1',
+    age : 20,
 }
+// name,age가 저장돼있는 첫 번째 메모리 값을 user1이 저장해주고 있음.
+const user2 = user1; // 메모리 값을 복사했어...!!(똑같은 객체를 2개의 변수가 조종하고있음.)
+// const로 지정했어도 그 안의 값 메모리 값을 변환시키는게 아니라면 객체는 변환 가능하다.
+user2.name = "user2";
+user2.weight = 70;
+// template literal방식은 객체를 직접 나타내주지 못 함.
+console.log(user1);
+console.log(user2);
