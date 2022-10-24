@@ -1,5 +1,5 @@
 'use strict';
-// 단항연산자 Unary Operator
+// 단항연산자 Unary(유너리) Operator
 // +(양) : 숫자를 +로 바꿈
 // -(음) : -1을 곱하는거와 같음 
 // !(부정) : 그 값의 boolean값을 반대로 바꿈.
