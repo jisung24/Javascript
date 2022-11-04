@@ -36,3 +36,17 @@ console.log(typeof undefined);
 function hello(){
     return 3;
 }
+
+// 자바스크립트 9가지 data type 다시 한 번 복습!! 
+// - primitive(변수안에 값이 들어감.)
+// 1. number(10진수, 그 외 진수, 예외(infinity, -infinity, NaN))
+// 2. string(문자열) 
+// 3. boolean(이거 아니면 저거) 0 -0 '' null undefined NaN => falshy... 나머지는 다 truthy
+// 4. undefined : 아직 메모리 할당 전. 
+// 5. null : 할당 했는데 값이 그냥 없는 메모리임을 명시! 
+// 6. Symbol
+
+// - object(변수안에 주소값이 들어감.)
+// 1. function(함수이름은 함수 코드블럭의 주소값을 담고있음.)
+// 2. array(마찬가지)
+// 3. object(마찬가지)
