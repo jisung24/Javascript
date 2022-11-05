@@ -9,3 +9,5 @@ function iterate(number){
         multy(i);
     }
 }
+// 함수가 2개 있으면 그 첫 번째 함수안에 2번째 함수를 넣어준다 => 파라미터로 넣어준다.
+iterate(3, multy); // => 이런식의 callback함수를 호출 가능!! 
