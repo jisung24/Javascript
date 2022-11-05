@@ -26,23 +26,14 @@ console.log(addNumber(2,3));
 // add라는 변수가 함수가 저장된 주소값을 갖고있음.
 // 함수의 이름은 함수 객체의 주소값을 갖고있어.. => 객체와 같아! 
 
-let hello = addNumber; // 똑같은 함수를 가리키고 있어! 
-// hello변수도 addNumber이 갖고있는 함수 주소값 갖고있음
-console.log(hello === addNumber); // true
-console.log(hello == addNumber); // true
-console.log(hello(5,6));
 
-console.clear();
-console.log(1);
+// !!!!!!! 요약 !!!!!!!
 
-// 동적으로 값이 몇 개든 더해주는 함수!!
-function addNumbers(numArr){
-    // 배열로 값을 받아서, 배열의 합을 구해주면 돼! 
-    // 동적으로 입력을 받으려면 반드시 배열로 받자!
-    const sum = numArr.reduce((acc, curr) => {
-        return acc + curr;
-    })
-    //더하기 sum은 더 이상 바뀌지 않으니까 const로 선언됨.
-    return sum;
-}
-console.log(addNumbers([1,2,3,4,5,6]));
+// 변수는 함수(처리)에 전달할 목적으로 잠깐 저장하는 것. 
+// 변수 값을 함수에 전달 => 파라미터(call by value)
+// 변수 내부에 있는 주소값을 전달 => 파라미터(call by reference)
+
+// output => return 
+// ! => 그래서 프로젝트는 그냥 무조건 함수야!!!!!!!!!
+
+// 파라미터 : input하기 위해 잠시 변수에 저장해놓고 값을 전달하거나, 주소값을 저장해놓음.
