@@ -76,4 +76,4 @@ let arr2 = new Set(arr);
 console.log(...arr2); // arr로 만들어야함!
 
 
-// 1-2) 배열 만들기 공부
+// 1-2) 배열 만들기 공부dsdsd
