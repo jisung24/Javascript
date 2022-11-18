@@ -19,7 +19,10 @@ class Person{
     }
 }
 
-const person1 = new Person('지성', 25);
+const person1 = new Person('지성', 25); // person1은 Person 클래스의 인스턴스이다.
 console.log(person1);
 person1.intro();
 
+// 얘는 그 어떤 인스턴스도 아니다.(그냥 객체일 뿐.)
+// 오로지 클래스를 통해서 민들어진 애들만 인스턴스라고 부른다.
+const person = {name : 'john', age : 26};
