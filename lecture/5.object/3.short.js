@@ -10,3 +10,9 @@ function makeObj(name, age){
     return { name, age };
 }
 console.log(makeObj("지성", 25));
+
+function make(){
+    return {
+        
+    }
+}
