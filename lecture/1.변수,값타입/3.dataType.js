@@ -13,6 +13,7 @@
 // - null(null => 아무 값이 없음을 할당해줌) => typeof는 object로 나옴. 왜지...?(버그...!)
 // - undefined(아직 값이 정해지지않음 => 할당이 아직 안 됨.)
 // - Symbol
+// - bigint
 
 // _2) object(객체타입) => 복합 데이터
 // - object
