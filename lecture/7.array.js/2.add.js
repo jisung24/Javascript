@@ -52,7 +52,7 @@ class Cal{
     // -> 아.. 연관되는 기능은 전부 메서드에다가 써 주면 되는구나... + - * / 해주는 함수들을 각각...! 
 
     // 1. 두 수를 더해주는 기능 
-    add = (num1, num2) => {
+    add = () => {
         return this.num1 + this.num2;
     }
 
@@ -78,5 +78,10 @@ class Cal{
     }
 }
 
-const calc = new Cal(4,2);
-console.log(calc);
+const calc = new Cal(5,6);
+console.log(calc.mul(5,6)); // 30 제대로 나옴. 
+// calc를 복사 한 번 
+
+// 객체 복사
+let copy = calc; // 이미 calc가 num1, num2를 5 6으로 set 해놨는데 변경할 수 있음. 
+console.log();
