@@ -68,5 +68,53 @@ let num = 3;
     test.splice(1, 3, 6);
     console.log(test);
 
+// 여기까지는 기존 배열을 바꿔버리는 함수. 
 
-        
+// 지금부턴 새로운 배열을 만드는 함수. 
+// ⭐️ 7. slice(n, m);
+// - index n번부터 m-1번까지 잘라서 새로운 배열을 만들어서 return한다. 
+// - 인자가 없다면 배열 전체를 ⭕️깊은복사⭕️를 한다.(1차원은 깊은복사, 2차원은 얕은복사)
+    const sliceArr = [1,2,3,4,5,6,7];
+    console.log(sliceArr.slice(1,4)); // idx 1 2 3까지 잘라서 새로운 배열을 만듦.
+    console.log(sliceArr.slice(-3, -1)); // 뒤에서 3번째 2번째까지. (뒤에서 첫 번쨰는 return안 해주는거 알지? 뒤 파라미터는 포함 안 시키는거야)
+    let slice = sliceArr.slice(); // deep copy
+    slice[0] = 100000;
+    console.log(slice, sliceArr); // 서로 다름. 
+
+// ⭐️ 8. arr.concat() : 배열을 이어붙여줌. 
+// -> 근데 es6부터는 새로나온 spread연산자를 이용하여 이어붙여준다. 
+    let arr1 = [1,2,3];
+    let arr2 = [5,6,7];
+    let arr3 = [...arr1, ...arr2]; // spread연산자 : 깊은복사 + 배열 이어붙이기 가능.
+    let arr4 = [...arr1]; //깊은복사.
+    arr4[0] = 1000;
+    console.log(arr1, arr4); // 역시 서로 다름.  
+    console.log(arr3);
+    let concat = arr1.concat(arr3); // arr1뒤에다가 arr3을 추가시켜준다.
+    console.log(concat);
+
+// ⭐️ 9. 배열의 순서를 거꾸로 해주는 속성 
+// -> 아무래도 정렬할 때 많이 쓰임. => 팀 순위나.. 타율 꼴찌 순으로 정렬할 때 등등.
+    let reverse = arr1.reverse(); 
+    console.log(reverse); // 3, 2, 1 출력
+
+// ⭐️ 10. arr.flat() : 중첩된 배열을 하나의 배열로 쭉 펴기! 
+// -> 이것도 역시 spread연산자 사용하면 훨씬 편해!
+// -> flat은 2차원 배열만 풀어줘서 3차원 배열부턴 -1씩 숫자 대입해야함.
+    arr = [ // 3차원 배열. => flat(2)
+        [1,2,3],
+        [4, [5,6]]
+    ]  
+    console.log(arr.flat()); // 2차원 -> 1차원으로
+    console.log(arr.flat(2)); // 3차원 -> 1차원으로
+
+// ⭐️ 11. arr.fill(값) : 특정한 값으로만 정해진 범위만큼 배열을 채워준다.
+    let arr5 = [1,2,3,4,5];
+    console.log(arr5.fill("지성")); // "지성"이란 값으로 배열 전체를 채워줌. 
+    let arr6 = arr5.fill('s', 1, 3); // index 1,2번만 s로 채워줘! 
+
+// ⭐️ 12. 배열을 문자열로 합하기. 
+    let names = ["dsdsd", "dsds", "dsdsd", "ewew"];
+    let str = names.join(" | ");
+    console.log(str);
+
