@@ -23,3 +23,12 @@
 
 // ❌ iterable하지 않은 객체
 // - 일반 객체(for..of, spread ❌ )
+
+const array = [1,2,3];
+for(let value of array){ // for..of 사용가능.
+    console.log(value); 
+}
+// 각각의 값
+// -> Symbol.iterator()함수를 사용해서, 
+// -> 그 함수에서 반환된 iterator를 가지고 하나하나씩 next()를 호출해서
+// -> 순회하는 것. 
