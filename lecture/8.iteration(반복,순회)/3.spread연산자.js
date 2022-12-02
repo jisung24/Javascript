@@ -21,3 +21,35 @@ let arr2 = [...arr]; // deep copy
 arr2[3] = 10000;
 console.log(arr, arr2);
 
+let me = {
+    name : "지성",
+    age : 25,
+}
+
+let jisung = {
+    ...me,
+    phone :  "01092876446",
+}
+jisung.name = "김지성";
+console.log(me, jisung);
+
+// 3. array,obj합치기
+// obj는 iterable이 아니지만, 합치기 할 때는 spread연산자 사용할 수 있다.
+let arr4 = [100,200,300];
+let arr3 = [400,500,600];
+console.log([...arr2, ...arr3]);
+
+let a = { name : 'jisung' };
+let b = { age : 25 };
+let c = {
+    ...a,
+    ...b,
+};
+console.log(c);
+
+// 정리
+// ⭐️ spread연산자 정리! ⭐️
+// 1. 함수 호출할 떄 값들을 전달 func(...values) : 여러 값들을 동적으로 전달
+// 2. rest parameter : 여러 값들을 받을 수 있다. 
+// 3. array, obj의 deep copy
+// 4. array 합치기 
