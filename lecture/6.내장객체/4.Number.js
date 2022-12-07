@@ -39,3 +39,5 @@ console.log(Math.random());
 console.log(parseInt((Math.random() * 10)) + 1); // 0부터 10까지 소수점..
 // 1부터 10까지 반환.
 console.log(parseInt(Math.random() * 10 + 1))
+
+// 복습! 

@@ -33,6 +33,7 @@ function countEle(arr, ele){
 
     return count;
 }
+
 let arr_ = [1,2,2,2,3,4,5];
 console.log(countEle(arr_, 2));
 
@@ -46,8 +47,8 @@ function bothItem(arr1, arr2){
     let copyArr1 = arr1.slice();
     let copyArr2 = arr2.slice();
     let commonArr = [];
-    for(let i = 0; i < copyArr1.length; i++){
-        if(copyArr2.includes(copyArr1[i])){ // 
+    for(let i = 0; i <= copyArr1.length; i++){
+        if(copyArr2.includes(copyArr1[i])){ 
             // 어차피 true니까 여기 실행됨.
             console.log(copyArr1[i]);
             commonArr.push(copyArr1[i]);

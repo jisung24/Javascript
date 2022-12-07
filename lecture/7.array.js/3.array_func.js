@@ -1,4 +1,7 @@
 'use strict';
+
+const e = require("express");
+
 // ⭐️ 아주 중요 ⭐️
 // ✨ 기존 배열 자체를 변경하는지, 새로운 배열을 반환하는지 꼭 알아야 함❗️
 
@@ -118,3 +121,13 @@ let num = 3;
     let str = names.join(" | ");
     console.log(str);
 
+
+    // 원하는 index에 접근함.... 
+    let str2 = "aabrgoa";
+    let arr8 = str2.split('').filter((value) => value === `a`);
+    console.log(`a의 개수는 ${arr8.length}`);
+    // 
+
+
+
+    

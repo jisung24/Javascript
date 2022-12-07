@@ -37,6 +37,7 @@ const numbers = [1, 3, 5, 7, 9, 10, 12, 14];
 
 // ⭐️ 5. arr.filter(콜백조건) -> 조건을 만족시키는 값들을 배열로! 
 // - 조건에 만족하는 모든 값들을 반환해서 새로운 배열로 만든다. 
+// - 배열에서 a의 개수를 구하기 => filter사용하고 그 변수의 길이 출력하면 돼! 
     let filterArr = [80, 88, 99, 87, 94];
     let classA = filterArr.filter((score) => score >= 90);
     console.log(classA.length); // 2명.  
