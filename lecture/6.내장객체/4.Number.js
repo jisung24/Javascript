@@ -41,3 +41,4 @@ console.log(parseInt((Math.random() * 10)) + 1); // 0부터 10까지 소수점..
 console.log(parseInt(Math.random() * 10 + 1))
 
 // 복습! 
+// 2022-12-08복습완료! 
