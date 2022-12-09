@@ -7,7 +7,7 @@
 const str = "가나다라마바사";
 
 // 문자열의 길이 (회원가입 할 때 제한두기)
-console.log(str.length);
+
 
 // str.indexOf("문자")
 // - 문자가 str안에 있는지 확인!
