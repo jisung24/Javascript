@@ -95,4 +95,8 @@ let arr = num
 // 4. str.endsWith("값") => str이 값으로 끝난다면 true, 아니면 false
 // 5. str.uppercase() => str전체를 대문자로
 // 6. str.lowercase() => str전체를 소문자로 
-// 7. 
+// 7. str.slice(n,m) => idx n부터 m-1번까지 문자열을 잘라서 새로운 문자열을 만든다!! => 깊은 복사! 
+    // -> 만약 파라미터에 값이 없을경우, 전체를 잘라서 복사한다. 
+// 8. str.trim() => 처음과 끝 공백문자를 제거해준다. => client에게 편안함을 준다. 
+// 9. str.split() => (문자열 => 배열) 
+// - arr.join() => (배열 => 문자열)
