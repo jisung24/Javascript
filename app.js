@@ -5,6 +5,9 @@ const app = express();
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static( './src/public' ));
 app.get('/index', async(req,res) => {
     // data를 보내는 코드는 html, js에서만 짜주고, 
     // 여기는 res로만...!! 

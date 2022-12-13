@@ -50,12 +50,18 @@
     - 자바스크립트 문법 아니야!
     1. console.log()
 
-### -6) react는 왜 나왔을까? 
+### -6) react는 왜 나왔을까?
+
 - dom이란 html태그들을 js가 이용할 수 있게끔 웹 브라우져가 계층 tree구조로 만든 객체모델을 의미한다.
-- 즉 (html,css) - dom - javascript 
-- 그럼 자바스크립트는 dom을 이용해서 html태그들을 어떻게 조종하는거야? 
-    - document객체를 이용하기 때문! 
-    - document객체 안에 있는 querySelector나 getElementsById라는 메서드를 사용해서 선택하고 조종한다. 
+- 즉 (html,css) - dom - javascript
+- 그럼 자바스크립트는 dom을 이용해서 html태그들을 어떻게 조종하는거야?
+  - document객체를 이용하기 때문!
+  - document객체 안에 있는 querySelector나 getElementsById라는 메서드를 사용해서 선택하고 조종한다.
 - `이 방식은 2가지 문제점이 있어!! -> 매번 메모리를 훑어야하며, 객체를 찾기위한 코드가 너무 복잡하다!! `
 - `실제 돔은 매우 무거워!!! => 그래서 이걸 복사한 가상 dom을 사용한다!! `
 - `가상dom이란?`
+
+### 12-13
+
+- scr에서 ajax기능을 사용
+- input tag onchange함수를 사용해서 checked === true || false일 때 분리해서 fetch를 사용해서 ajax를 다르게 event를 줌!
