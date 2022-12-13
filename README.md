@@ -64,4 +64,4 @@
 ### 12-13
 
 - scr에서 ajax기능을 사용
-- input tag onchange함수를 사용해서 checked === true || false일 때 분리해서 fetch를 사용해서 ajax를 다르게 event를 줌!
+- input tag onchange함수를 사용해서 checked === true || false일 때 분리해서 fetch를 사용해서 ajax를 다르게 event를 줌!!
